@@ -1,0 +1,17 @@
+[Default Applications]
+text/html=google-chrome-beta.desktop
+x-scheme-handler/http=google-chrome-beta.desktop
+x-scheme-handler/https=google-chrome-beta.desktop
+x-scheme-handler/about=google-chrome-beta.desktop
+x-scheme-handler/unknown=google-chrome-beta.desktop
+x-directory/normal=/usr/share/applications/Thunar.desktop
+x-scheme-handler/irc=google-chrome-beta.desktop
+x-scheme-handler/webcal=google-chrome-beta.desktop
+
+[Added Associations]
+application/pdf=google-chrome-beta.desktop;gimp.desktop;
+image/jpeg=feh.desktop;
+application/octet-stream=feh.desktop;
+text/x-chdr=visual-studio-code.desktop;
+text/x-c++src=visual-studio-code.desktop;
+text/plain=visual-studio-code.desktop;

@@ -1,0 +1,126 @@
+[global]
+    font = SF Mono Light 7
+    markup = yes
+    format = "%s\n%b"
+    sort = yes
+    indicate_hidden = no
+    alignment = left
+    bounce_freq = 2
+    show_age_threshold = 120
+    word_wrap = yes
+    ignore_newline = yes
+    geometry = "250x0-15-24"
+    shrink = yes
+    transparency = 0
+    idle_threshold = 120
+    monitor = 0
+    follow = mouse
+    sticky_history = no
+    history_length = 0
+    show_indicators = true
+    line_height = 0
+    separator_height = 1
+    padding = 15
+    horizontal_padding = 15
+    frame_width = 0
+    frame_color = "#111111"
+    separator_color = "#eeeeee"
+    startup_notification = false
+    dmenu = /usr/bin/j4-dmenu-desktop --dmenu='rofi -dmenu -i -p "> "'
+    browser = /usr/bin/google-chrome-beta
+    icon_position = left
+    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    max_icon_size = 28
+
+[shortcuts]
+
+    # Shortcuts are specified as [modifier+][modifier+]...key
+    # Available modifiers are "ctrl", "mod1" (the alt-key), "mod2",
+    # "mod3" and "mod4" (windows-key).
+    # Xev might be helpful to find names for keys.
+    
+    # Close notification.
+    close = ctrl+space
+    
+    # Close all notifications.
+    close_all = ctrl+shift+space
+    
+    # Redisplay last message(s).
+    # On the US keyboard layout "grave" is normally above TAB and left
+    # of "1".
+    history = ctrl+grave
+    
+    # Context menu.
+    context = ctrl+shift+period
+
+[urgency_low]
+    # IMPORTANT: colors have to be defined in quotation marks.
+    # Otherwise the "#" and following would be interpreted as a comment.
+    background = "#eeeeee"
+    foreground = "#111111"
+    timeout = 2
+
+[urgency_normal]
+    background = "#eeeeee"
+    foreground = "#111111"
+    timeout = 2
+
+[urgency_critical]
+    background = "#e84f4f"
+    foreground = "#222222"
+    timeout = 0
+
+
+# Every section that isn't one of the above is interpreted as a rules to
+# override settings for certain messages.
+# Messages can be matched by "appname", "summary", "body", "icon", "category",
+# "msg_urgency" and you can override the "timeout", "urgency", "foreground",
+# "background", "new_icon" and "format".
+# Shell-like globbing will get expanded.
+#
+# SCRIPTING
+# You can specify a script that gets run when the rule matches by
+# setting the "script" option.
+# The script will be called as follows:
+#   script appname summary body icon urgency
+# where urgency can be "LOW", "NORMAL" or "CRITICAL".
+# 
+# NOTE: if you don't want a notification to be displayed, set the format
+# to "".
+# NOTE: It might be helpful to run dunst -print in a terminal in order
+# to find fitting options for rules.
+
+#[espeak]
+#    summary = "*"
+#    script = dunst_espeak.sh
+
+#[script-test]
+#    summary = "*script*"
+#    script = dunst_test.sh
+
+#[ignore]
+#    # This notification will not be displayed
+#    summary = "foobar"
+#    format = ""
+
+#[signed_on]
+#    appname = Pidgin
+#    summary = "*signed on*"
+#    urgency = low
+#
+#[signed_off]
+#    appname = Pidgin
+#    summary = *signed off*
+#    urgency = low
+#
+#[says]
+#    appname = Pidgin
+#    summary = *says*
+#    urgency = critical
+#
+#[twitter]
+#    appname = Pidgin
+#    summary = *twitter.com*
+#    urgency = normal
+#
+# vim: ft=cfg

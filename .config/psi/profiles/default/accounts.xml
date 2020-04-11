@@ -1,0 +1,102 @@
+<!DOCTYPE accounts>
+<accounts xmlns="http://psi-im.org/options" version="1.3-dev (2018-04-23, webengine)">
+ <accounts>
+  <a0>
+   <roster-cache>
+    <a1>
+     <ask type="QString"></ask>
+     <subscription type="QString">both</subscription>
+     <name type="QString"></name>
+     <groups type="QStringList"/>
+     <jid type="QString">328cg57@jabbim.com</jid>
+    </a1>
+    <a0>
+     <ask type="QString">subscribe</ask>
+     <subscription type="QString">none</subscription>
+     <name type="QString"></name>
+     <groups type="QStringList"/>
+     <jid type="QString">jabbim.com</jid>
+    </a0>
+   </roster-cache>
+   <tls>
+    <override-certificate type="QByteArray"></override-certificate>
+    <override-domain type="QString"></override-domain>
+   </tls>
+   <custom-auth>
+    <authid type="QString"></authid>
+    <use type="bool">false</use>
+    <realm type="QString"></realm>
+   </custom-auth>
+   <scram>
+    <store-salted-password type="bool">false</store-salted-password>
+    <salted-password type="QString"></salted-password>
+   </scram>
+   <priority type="int">5</priority>
+   <last-with-priority type="bool">false</last-with-priority>
+   <legacy-ssl-probe type="bool">false</legacy-ssl-probe>
+   <last-status-message type="QString"></last-status-message>
+   <keep-alive type="bool">true</keep-alive>
+   <jid type="QString">hhannahh@jabbim.com</jid>
+   <stun-username type="QString"></stun-username>
+   <ibb-only type="bool">false</ibb-only>
+   <port type="int">5222</port>
+   <require-mutual-auth type="bool">false</require-mutual-auth>
+   <automatic-resource type="bool">true</automatic-resource>
+   <stun-host type="QString">stun.jabber.ru:5249</stun-host>
+   <id type="QString">{cc8c19f9-89c4-4335-8c5c-af0d275730e7}</id>
+   <log type="bool">true</log>
+   <security-level type="int">0</security-level>
+   <name type="QString">hhannahh</name>
+   <pgp-pass-phrase type="QString"></pgp-pass-phrase>
+   <compress type="bool">false</compress>
+   <last-status type="QString">online</last-status>
+   <priority-depends-on-status type="bool">true</priority-depends-on-status>
+   <auto type="bool">false</auto>
+   <muc-bookmarks-ignore type="QStringList"/>
+   <host type="QString"></host>
+   <auto-same-status type="bool">true</auto-same-status>
+   <always-visible-contacts type="QStringList"/>
+   <bytestreams-proxy type="QString"></bytestreams-proxy>
+   <enabled type="bool">true</enabled>
+   <enable-sm type="bool">true</enable-sm>
+   <stun-password type="QString"></stun-password>
+   <pgp-secret-key-id type="QString"></pgp-secret-key-id>
+   <resource type="QString">Psi</resource>
+   <ignore-SSL-warnings type="bool">false</ignore-SSL-warnings>
+   <ssl type="QString">auto</ssl>
+   <connect-after-sleep type="bool">false</connect-after-sleep>
+   <allow-plain type="QString">over encryped</allow-plain>
+   <stun-hosts type="QStringList">
+    <item>stun.jabber.ru:5249</item>
+    <item>stun.habahaba.im</item>
+    <item>stun.ekiga.net</item>
+    <item>provserver.televolution.net</item>
+    <item>stun1.voiceeclipse.net</item>
+    <item>stun.callwithus.com</item>
+    <item>stun.counterpath.net</item>
+    <item>stun.endigovoip.com</item>
+    <item>stun.ideasip.com</item>
+    <item>stun.internetcalls.com</item>
+    <item>stun.noc.ams-ix.net</item>
+    <item>stun.phonepower.com</item>
+    <item>stun.phoneserve.com</item>
+    <item>stun.rnktel.com</item>
+    <item>stun.softjoys.com</item>
+    <item>stun.sipgate.net</item>
+    <item>stun.sipgate.net:10000</item>
+    <item>stun.stunprotocol.org</item>
+    <item>stun.voipbuster.com</item>
+    <item>stun.voxgratia.org</item>
+   </stun-hosts>
+   <password type="QString">005c000b00550008001f004f003c002e0073</password>
+   <reconn type="bool">false</reconn>
+   <use-host type="bool">false</use-host>
+   <ignore-global-actions type="bool">false</ignore-global-actions>
+   <proxy-id type="QString"></proxy-id>
+   <muc-bookmarks type="QStringList"/>
+  </a0>
+ </accounts>
+ <order type="QStringList">
+  <item>{cc8c19f9-89c4-4335-8c5c-af0d275730e7}</item>
+ </order>
+</accounts>

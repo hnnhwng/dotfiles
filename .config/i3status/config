@@ -1,0 +1,79 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+		color_good = "#202020"
+		color_degraded = "#404040"
+		color_bad = "#ffcccc"
+        interval = 1
+}
+
+#order += "ipv6"
+#order += "path_exists VPN"
+#order += "run_script vpn_status"
+order += "battery 0"
+#order += "cpu_temperature 0"
+order += "volume master"
+order += "wireless wlp3s0"
+order += "ethernet enp0s25"
+order += "tztime local"
+
+#ipv6 {
+#	format_up = "IPv6"
+#	format_down = ""
+#}
+
+wireless wlp3s0 {
+    format_up = "w %essid"
+    format_down = ""
+}
+
+ethernet enp0s25 {
+    format_up = "e %ip (%speed)"
+	format_down = ""
+}
+
+battery 0 {
+    format = "b %percentage%status"
+    last_full_capacity = true
+    status_unk = ""
+    status_chr = "+"
+    status_bat = "-"
+    status_full = ""
+    low_threshold = 30
+    threshold_type = "time"
+}
+
+volume master {
+    format = "v %volume"
+    format_muted = "muted"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+#path_exists VPN {
+#	path = "/sys/class/net/tun0"
+#	format = "%title:"
+#	format_down = ""
+#}
+
+#run_script vpn_status {
+#	script = "/home/hannah/.bin/vpn_connection.sh"
+#	format_down = ""
+#}
+
+tztime local {
+    format = "%A %B %d %I:%M "
+}
+
+#cpu_temperature 0 {
+#    format = "%degrees°C"
+#    path = "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input"
+#}

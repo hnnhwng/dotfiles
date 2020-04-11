@@ -1,0 +1,108 @@
+###########################
+# xbindkeys configuration #
+###########################
+#
+# Version: 0.1.3
+#
+# If you edit this, do not forget to uncomment any lines that you change.
+# The pound(#) symbol may be used anywhere for comments.
+#
+# A list of keys is in /usr/include/X11/keysym.h and in
+# /usr/include/X11/keysymdef.h 
+# The XK_ is not needed. 
+#
+# List of modifier (on my keyboard): 
+#   Control, Shift, Mod1 (Alt), Mod2 (NumLock), 
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll). 
+#
+# Another way to specifie a key is to use 'xev' and set the 
+# keycode with c:nnn or the modifier with m:nnn where nnn is 
+# the keycode or the state returned by xev 
+#
+# This file is created by xbindkey_config 
+# The structure is : 
+# # Remark 
+# "command" 
+# m:xxx + c:xxx 
+# Shift+... 
+
+
+
+
+#keystate_numlock = enable
+#keystate_scrolllock = enable
+#keystate_capslock = enable
+
+
+
+#Next
+"playerctl -a next"
+    m:0x0 + c:171
+    XF86AudioNext 
+
+#Previous
+"playerctl -a previous"
+    m:0x0 + c:173
+    XF86AudioPrev 
+
+#Play-Pause
+"playerctl -a play-pause"
+    m:0x0 + c:172
+    XF86AudioPlay 
+
+#Stop
+"playerctl -a stop"
+    m:0x0 + c:174
+    XF86AudioStop 
+
+#Lock
+"/usr/share/doc/xss-lock/lock.sh"
+    m:0x0 + c:160
+    XF86ScreenSaver 
+
+#Raise Volume
+"pamixer -i 2"
+    m:0x0 + c:123
+    XF86AudioRaiseVolume 
+
+#Lower Volume
+"pamixer -d 2"
+    m:0x0 + c:122
+    XF86AudioLowerVolume 
+
+#Mute
+"pamixer -t"
+    m:0x0 + c:121
+    XF86AudioMute 
+
+#Mic Mute
+"amixer set Capture toggle"
+    m:0x0 + c:198
+    XF86AudioMicMute 
+
+#Capture Current Desktop
+"xpoush.sh -w"
+    m:0x5 + c:11
+    Control+Shift + 2 
+
+#Capture Desktop
+"xpoush.sh -f"
+    m:0x5 + c:12
+    Control+Shift + 3 
+
+#Capture Area
+"xpoush.sh -s"
+    m:0x5 + c:13
+    Control+Shift + 4 
+
+#Capture Desktop Pause
+"sleep 1; xpoush.sh -f"
+    m:0x0 + c:107
+    Print 
+
+#Fix middle mouse click
+"echo -n | xsel -n -i; pkill xbindkeys; xdotool click 2; xbindkeys"
+    b:2 + Release
+
+#
+# End of xbindkeys configuration

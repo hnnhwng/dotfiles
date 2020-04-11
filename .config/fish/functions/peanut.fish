@@ -1,0 +1,4 @@
+# Defined in - @ line 1
+function peanut --description alias\ peanut=wget\ -q\ -o\ /dev/null\ \(wget\ -q\ -o\ /dev/null\ \"comm-and.tumblr.com/api/read/\?type=photo\&num=100\"\ -qO\ -\ \|\ grep\ -oP\ \"photo-url\ max-width=\\\"1280\\\"\>.\*\?\</photo-url\"\ \|\ grep\ -oP\ \"https://.\*\?\\.\(png\|jpg\|gif\)\"\ \|\ shuf\ -n\ 1\)\ -qO\ /tmp/peanut\;\ img2txt\ -f\ utf8\ -d\ none\ -g\ 0.6\ -W\ \(stty\ size\ \|\ grep\ -o\ \"\\s.\*\"\)\ -x\ 8\ -y\ 17\ /tmp/peanut\ \|\ sed\ -e\ \'s/\;5\;/\;/g\'
+	wget -q -o /dev/null (wget -q -o /dev/null "comm-and.tumblr.com/api/read/?type=photo&num=100" -qO - | grep -oP "photo-url max-width=\"1280\">.*?</photo-url" | grep -oP "https://.*?\.(png|jpg|gif)" | shuf -n 1) -qO /tmp/peanut; img2txt -f utf8 -d none -g 0.6 -W (stty size | grep -o "\s.*") -x 8 -y 17 /tmp/peanut | sed -e 's/;5;/;/g' $argv;
+end

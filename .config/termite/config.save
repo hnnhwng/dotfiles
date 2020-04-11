@@ -1,0 +1,53 @@
+[options]
+font = Gohu GohuFont 11
+resize_grip = false
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = true
+visible_bell = false
+mouse_autohide = true
+allow_bold = false
+dynamic_title = true
+scrollback_lines = -1
+urgent_on_bell = true
+clickable_url = true
+browser = google-chrome-beta
+
+[colors]
+
+# special
+foreground      = #f9f9f9
+foreground_bold = #ffffff
+cursor          = #d9ffd9
+background      = rgba(255,255,255,0.1)
+
+# black
+color0  = #666666
+color8  = #999999
+
+# red
+color1  = #ffb3b3
+color9  = #ffd9d9
+
+# green
+color2  = #b3ffb3
+color10 = #d9ffd9
+
+# yellow
+color3  = #ffffb3
+color11 = #ffffd9
+
+# blue
+color4  = #b3d9ff
+color12 = #d9f2ff
+
+# magenta
+color5  = #ffb3d9
+color13 = #ffd9f2
+
+# cyan
+color6  = #b3ffff
+color14 = #d9ffff
+# white
+color7  = #cccccc
+color15 = #ffffff

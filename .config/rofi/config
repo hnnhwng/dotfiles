@@ -1,0 +1,23 @@
+rofi.modi: window,drun,run
+rofi.fullscreen: false
+rofi.padding: 30
+rofi.width: 30
+rofi.lines: 4
+! rofi.font: Gohu GohuFont 11
+rofi.font: SF Mono Light 10
+rofi.separator-style: none
+rofi.hide-scrollbar: true
+rofi.bw: 8
+rofi.display-drun: run
+rofi.display-run: exec
+rofi.terminal: urxvt
+rofi.case-sensitive: false
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+! State:            'bg'        'fg'        'bgalt'         'h1bg'      'h1fg'
+rofi.color-window:  #EEEEEE,    argb:11FFFFFF
+rofi.color-normal:  #EEEEEE,    #BBBBBB,    argb:00000000,  #EEEEEE,    #171717
+rofi.color-active:  #FFFFFF,    #BBBBBB,    argb:00000000,  #FFFFFF,    #171717
+rofi.color-urgent:  #171717,    #FFFFFF,    argb:00000000,  #BBBBBB,    #000000
+
